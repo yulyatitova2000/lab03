@@ -1,13 +1,12 @@
-package org.example;
+package org.example.products;
 
 import java.util.Objects;
 
-public class PackageWeightProduct  extends PackageProduct {
+public class PieceProduct extends Product {
     protected double weight;
 
-    public PackageWeightProduct(Package aPackage, WeightProduct product, double weight) {
-        this.aPackage = aPackage;
-        this.product = product;
+    public PieceProduct(String name, String description, double weight) {
+        super(name, description);
         this.weight = weight;
     }
 
@@ -23,7 +22,7 @@ public class PackageWeightProduct  extends PackageProduct {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
-        PackageWeightProduct that = (PackageWeightProduct) o;
+        PieceProduct that = (PieceProduct) o;
         return Double.compare(weight, that.weight) == 0;
     }
 
@@ -34,20 +33,10 @@ public class PackageWeightProduct  extends PackageProduct {
 
     @Override
     public String toString() {
-        return "PackageWeightProduct{" +
-                "weight=" + weight +
-                ", aPackage=" + aPackage +
-                ", product=" + product +
+        return "PieceProduct{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", weight=" + weight +
                 '}';
-    }
-
-    @Override
-    public double getNet() {
-        return weight;
-    }
-
-    @Override
-    public double getGross() {
-        return getNet() + aPackage.getWeight();
     }
 }

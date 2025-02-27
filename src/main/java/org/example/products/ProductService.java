@@ -1,7 +1,9 @@
-package org.example;
+package org.example.products;
+
+import org.example.filters.IFilter;
 
 public class ProductService {
-    static public int countByFilter(BatchProducts batchProducts, Filter filter){
+    static public int countByFilter(BatchProducts batchProducts, IFilter filter){
         int count = 0;
         PackageProduct[] packageProducts = batchProducts.getProducts();
 

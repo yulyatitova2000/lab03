@@ -1,4 +1,4 @@
-package org.example;
+package org.example.filters;
 
 public class EndStringFilter extends Filter {
     public EndStringFilter(String pattern) {

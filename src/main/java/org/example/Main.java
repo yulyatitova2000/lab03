@@ -1,9 +1,15 @@
 package org.example;
 
+import org.example.filters.BeginStringFilter;
+import org.example.filters.CaseInsensitiveStringFilter;
+import org.example.filters.EndStringFilter;
+import org.example.products.*;
+import org.example.products.Package;
+
 public class Main {
     public static void main(String[] args) {
-        Package aPackage1 = new Package("Малая упаковка", 0.02);
-        Package aPackage2 = new Package("Большая упаковка", 0.1);
+        org.example.products.Package aPackage1 = new org.example.products.Package("Малая упаковка", 0.02);
+        org.example.products.Package aPackage2 = new Package("Большая упаковка", 0.1);
 
         WeightProduct weightProduct = new WeightProduct("Bounty", "Шоколадные батончики Bounty");
         PieceProduct pieceProduct = new PieceProduct("Pedigree", "Сухой корм Pedigree для взрослых собак", 3);

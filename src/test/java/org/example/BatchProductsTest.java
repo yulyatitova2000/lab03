@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.products.*;
+import org.example.products.Package;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +13,7 @@ class BatchProductsTest {
     @BeforeEach
     void setUp() {
         PackagePieceProduct packagePieceProduct = new PackagePieceProduct(
-                new Package("Большая упаковка", 0.1),
+                new org.example.products.Package("Большая упаковка", 0.1),
                 new PieceProduct("Pedigree", "Сухой корм Pedigree для взрослых собак", 3),
                 4);
 

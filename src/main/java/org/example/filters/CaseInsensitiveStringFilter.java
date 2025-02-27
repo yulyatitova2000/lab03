@@ -1,4 +1,4 @@
-package org.example;
+package org.example.filters;
 
 public class CaseInsensitiveStringFilter extends Filter {
     public CaseInsensitiveStringFilter(String pattern) {

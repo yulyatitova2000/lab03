@@ -1,4 +1,4 @@
-package org.example;
+package org.example.filters;
 
 public class BeginStringFilter extends Filter {
     public BeginStringFilter(String pattern) {
