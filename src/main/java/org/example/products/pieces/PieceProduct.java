@@ -1,4 +1,6 @@
-package org.example.products;
+package org.example.products.pieces;
+
+import org.example.products.Product;
 
 import java.util.Objects;
 

@@ -1,4 +1,7 @@
-package org.example.products;
+package org.example.products.pieces;
+
+import org.example.products.Package;
+import org.example.products.PackageProduct;
 
 import java.util.Objects;
 

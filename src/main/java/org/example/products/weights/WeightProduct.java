@@ -1,4 +1,6 @@
-package org.example.products;
+package org.example.products.weights;
+
+import org.example.products.Product;
 
 public class WeightProduct extends Product {
 

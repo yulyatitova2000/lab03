@@ -2,6 +2,10 @@ package org.example;
 
 import org.example.products.*;
 import org.example.products.Package;
+import org.example.products.pieces.PackagePieceProduct;
+import org.example.products.pieces.PieceProduct;
+import org.example.products.weights.PackageWeightProduct;
+import org.example.products.weights.WeightProduct;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

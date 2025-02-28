@@ -5,6 +5,10 @@ import org.example.filters.CaseInsensitiveStringFilter;
 import org.example.filters.EndStringFilter;
 import org.example.products.*;
 import org.example.products.Package;
+import org.example.products.pieces.PackagePieceProduct;
+import org.example.products.pieces.PieceProduct;
+import org.example.products.weights.PackageWeightProduct;
+import org.example.products.weights.WeightProduct;
 
 public class Main {
     public static void main(String[] args) {
